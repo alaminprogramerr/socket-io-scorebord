@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/images/favicon.png">
+    <title>Fla Ti Bird</title>
+    <!-- css -->
+    <link href="assets/node_modules/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/colors/default.css" id="theme" rel="stylesheet">
+    <!-- js -->
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+
+    <script src="./js/axios.js"></script>
+    
+    <script src="./js/custom/signIn.js"></script>
+</head>
+
+<body class="fix-header card-no-border fix-sidebar">
+    <div class="preloader">
+        <div class="loader">
+            <div class="loader__figure"></div>
+            <p class="loader__label">Fla Ti Bird</p>
+        </div>
+    </div>
+    <a class="d-none" id="home" href="./index.html">Home</a>
+    <div id="main-wrapper" style="background-color: #f6f9fa">
+        <div class="page-wrapper">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-lg-6 col-xlg-4 col-md-8">
+
+                        <div class="card">
+                            <div class="card-body">
+                                <form class="form-horizontal form-material">
+                                    <p id="errorMassage" class="text-danger  text-center"></p>
+                                    <p id="emailError" class="text-danger  text-center">Email required !!</p>
+                                    <p id="passwordError" class="text-danger  text-center">Password required !!</p>
+                                    <div class="form-group">
+                                        <label for="example-email" class="col-md-12">Email</label>
+                                        <div class="col-md-12">
+                                            <input type="email" placeholder="Enter email"
+                                                class="form-control form-control-line" name="example-email"
+                                                id="email">
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label class="col-md-12">Password</label>
+                                        <div class="col-md-12">
+                                            <input type="password" placeholder="Choose a password" id="password"
+                                                class="form-control form-control-line">
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <div class="col-sm-12">
+                                            <button class="btn btn-success" id="logBtn">Sign in</button>
+                                            <p>Not have a account ? <a href="./signUp.html">Sign up</a> </p>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="assets/node_modules/jquery/jquery.min.js"></script>
+    <script src="assets/node_modules/bootstrap/js/popper.min.js"></script>
+    <script src="assets/node_modules/bootstrap/js/bootstrap.min.js"></script>
+    <script src="js/perfect-scrollbar.jquery.min.js"></script>
+    <script src="js/waves.js"></script>
+    <script src="js/sidebarmenu.js"></script>
+    <script src="js/custom.min.js"></script>
+</body>
+
+</html>

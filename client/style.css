@@ -1,0 +1,14 @@
+.topbar .top-navbar .navbar-nav > .nav-item > .nav-link {
+    font-size: 20px;
+    margin-right: 40px;
+    margin: 0px;
+    border: none;
+    line-height: 54px;
+}
+.fix-sidebar .left-sidebar {
+    right: 0;
+    position: fixed;
+}
+.userlist{
+    position: absolute !important;
+}

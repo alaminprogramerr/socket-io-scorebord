@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FlaTi Bird</title>
+<link rel="stylesheet" href="./game-styles.css">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+<script src="./js/socket.io.client.js"></script>
+<style>
+  .buttonStyle{
+    text-decoration: none;
+    color: #fff;
+    background-color: #26a69a;
+    text-align: center;
+    letter-spacing: .5px;
+    -webkit-transition: background-color .2s ease-out;
+    transition: background-color .2s ease-out;
+    cursor: pointer;
+  }
+</style>
+</head>
+<body>
+  <a href="./login.html" id="loginPage" class="d-none"></a>
+  <nav>
+    <div class="nav-wrapper">
+      <a href="#!" class="brand-logo">FlaTi Bird</a>
+      <ul class="right hide-on-med-and-down">
+        <li><a class="waves-effect waves-light "><button class="buttonStyle" id="logOutBtn">Log out</button></a></li>
+      </ul>
+    </div>
+  </nav>
+  <div class="userlist" style="position: absolute;min-width: 200px;right: 0;;">
+    <div class="collection" id="userList">
+      <a href="#!" class="collection-item"><span class="new badge">1</span>Alan</a>
+    </div>
+  </div>
+  <div class="w3-container">
+    <button onclick="document.getElementById('id01').style.display='block'"
+      class="w3-button w3-black">Scoreboard</button>
+    <div id="id01" class="w3-modal">
+      <div class="w3-modal-content">
+        <div class="w3-container">
+          <span onclick="document.getElementById('id01').style.display='none'"
+            class="w3-button w3-display-topright">&times;</span>
+          <label class="position">
+            <p style="color:red;font-size: 24px; padding: 3px 0;">Position</p>
+            <p style="font-size: 25px;" id="position">00</p>
+          </label>
+          <label class="user">
+            <p style="color:red;font-size: 24px; padding: 3px 0;">User Name</p>
+            <p style="font-size: 25px;" id="name"></p>
+          </label>
+          <label class="score">
+            <p style="color:red;font-size: 24px; padding: 3px 0;"> High Score</p>
+            <p style="font-size: 25px;" id="score">00</p>
+          </label>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <canvas id="canvas"></canvas>
+
+  <script src="bird.js"></script>
+  <script src="obstacles.js"></script>
+  <script src="main.js"></script>
+  <script src="./js/axios.js"></script>
+  <script src="./js/custom/home.js"></script>
+
+  <div style="text-align: center;">
+    <button class="btn text-center">Restart</button>
+  </div>
+
+
+</body>
+
+</html>
